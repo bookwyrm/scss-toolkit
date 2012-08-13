@@ -2,7 +2,8 @@
 ---------------------------------------------------------------------- */
 
   .article-listing {
-
+    margin: 0 0 20px;
+    
     > * { @include box-sizing(border-box); }
 
     .entry-meta {
