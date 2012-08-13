@@ -1,0 +1,35 @@
+/*= @group Example
+---------------------------------------------------------------------- */
+
+/*
+  ## Media Pattern
+
+  Provides a standard layout with image floated left and content on the right that doesn't wrap under the image.
+  
+  http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+
+    <div class="news-item media">
+        <img class="news-item-logo img" src="/images/logos/technology-review-logo.jpg" width="180" alt="Technology Review Logo">
+        <div class="bd">
+            <span class="news-item-date">June 7, 2012</span>
+            <span class="news-item-source">Technology Review: MIT</span>
+            <a href="http://www.technologyreview.com/news/428109/tiny-robots-mend-broken-hearts/?ref=rss" class="news-item-title">Tiny Robots Mend Broken Hearts</a>
+        </div>
+    </div>
+*/
+.media {
+  margin: 0 0 20px;
+    
+  &, .body {
+    overflow: hidden;
+    zoom: 1;
+  }
+  
+  .img {
+    float: left;
+    margin-right: 30px;
+    
+    img { display: block; }
+  }
+}
+
